@@ -1,15 +1,22 @@
-<h2>This is a test of the program</h2>
-
-<p>A random number from 1 to 100 is <%= rand(1..100) %></p>
-
-
 <form action="/payment/results">
-    <label for="square_input">Enter a number
+    <label for="APR">APR
     </label>
 
-    <input id="square_input" type="text" placeholder="What number do you want to square?" name="user_square">
+    <input id="APR" type="text" placeholder="E.g. 5.42" name="apr">
     </input>
 
-    <button>Calculate square
+    <label for="years">Number of years
+    </label>
+
+    <input id="years" type="text" placeholder="How many years to repay?" name="years">
+    </input>
+
+    <label for="principal">Principal
+    </label>
+
+    <input id="principal" type="text" placeholder="How much principal?" name="principal">
+    </input>
+
+    <button>Calculate monthly payment
     </button>
 </form>

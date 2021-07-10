@@ -1,15 +1,16 @@
-<h2>This is a test of the program</h2>
-
-<p>A random number from 1 to 100 is <%= rand(1..100) %></p>
-
-
 <form action="/random/results">
-    <label for="square_input">Enter a number
+    <label for="minimum">Minimum
     </label>
 
-    <input id="square_input" type="text" placeholder="What number do you want to square?" name="user_square">
+    <input id="minimum" type="text" placeholder="E.g. 1.5" name="min">
     </input>
 
-    <button>Calculate square
+    <label for="maximum">Maximum
+    </label>
+
+    <input id="maximum" type="text" placeholder="E.g. 4.5" name="max">
+    </input>
+
+    <button>Pick random number
     </button>
 </form>
